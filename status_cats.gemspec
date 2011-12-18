@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.email       = ["iain@iain.nl"]
   s.homepage    = "https://github.com/iain/status_cats"
   s.summary     = %q{Rack middleware; replaces responses with cats}
-  s.description = %q{Rack middleware; replaces responses with pictures of cats}
+  s.description = %q{Rack middleware replacing responses with relevant pictures of cats, based on the status code.}
 
   s.rubyforge_project = "status_cats"
 

@@ -1,8 +1,10 @@
-# HTTP Status Cats
+# Status Cats
 
-Rack middleware replacing status codes with pictures of cats.
+Rack middleware replacing responses with relevant pictures of cats, based on the status code.
 
-* [Source](http://www.flickr.com/photos/girliemac/sets/72157628409467125/detail/)
+The pictures are made/collected by girliemac on [Flickr](http://www.flickr.com/photos/girliemac/sets/72157628409467125/detail/)
+
+There is also an [apache module](https://gist.github.com/1476499).
 
 ## Usage
 
@@ -31,3 +33,14 @@ use StatusCats, :only => [ 403, 404, 500 ]
 
 use StatusCats, :except => 200...300
 ```
+
+## Known issues
+
+Status code 100 (Continue) cannot have a response body. Triggering it will case Rack to throw up.
+
+## License
+
+The Ruby code in this project is released under the MIT License.
+
+The pictures of cats are by Flickr user [girliemac](http://www.flickr.com/photos/girliemac/),
+released under [this](http://creativecommons.org/licenses/by/2.0/deed.en) Creative Commons License.
