@@ -17,6 +17,11 @@ describe StatusCats do
 
     end
 
+    it "won't replace response with a cat if there is no file for it" do
+      get "201"
+      last_response.should_not be_replaced_with_cat
+    end
+
   end
 
   describe ":only" do
