@@ -4,5 +4,5 @@ require 'status_cats'
 
 require File.expand_path('../spec/test_app', __FILE__)
 
-use StatusCats::Middleware
+use StatusCats
 run TestApp.new

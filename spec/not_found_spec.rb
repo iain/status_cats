@@ -4,13 +4,13 @@ require 'rack/test'
 require 'status_cats'
 require 'test_app'
 
-describe StatusCats::Middleware do
+describe StatusCats do
 
   include Rack::Test::Methods
 
-  let(:app) { StatusCats::Middleware.new(TestApp.new) }
+  let(:app) { StatusCats.new(TestApp.new) }
 
-  StatusCats::Middleware::CATS.each do |code|
+  StatusCats::CATS.each do |code|
 
     it "displays cat for status #{code}" do
       get code.to_s

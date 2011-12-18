@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "status_cats/version"
 
 Gem::Specification.new do |s|
   s.name        = "status_cats"
-  s.version     = StatusCats::VERSION
+  s.version     = "0.0.1"
   s.authors     = ["iain"]
   s.email       = ["iain@iain.nl"]
   s.homepage    = "https://github.com/iain/status_cats"

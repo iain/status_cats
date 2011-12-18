@@ -16,5 +16,7 @@ Place inside your rackup file:
 
 ``` ruby
 require 'status_cats'
-use StatusCats::Middleware
+use StatusCats
 ```
+
+This will also replace valid responses, even `200`, basically making your application useless.
