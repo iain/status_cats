@@ -10,7 +10,7 @@ There is also an [apache module](https://gist.github.com/1476499).
 
 Install:
 
-```
+``` sh
 gem install status_cats
 ```
 
@@ -32,6 +32,20 @@ use StatusCats, :only => [ 403, 404, 500 ]
 # or ...
 
 use StatusCats, :except => 200...300
+```
+
+## Development
+
+Install dependencies:
+
+``` sh
+bundle install
+```
+
+Run tests:
+
+``` sh
+rake
 ```
 
 ## Known issues
