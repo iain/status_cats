@@ -50,7 +50,7 @@ rake
 
 ## Known issues
 
-Status code 100 (Continue) cannot have a response body. Triggering it will case Rack to throw up.
+Status code 100 (Continue) cannot have a response body. Triggering it will cause Rack to throw up.
 
 ## License
 
