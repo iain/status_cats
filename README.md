@@ -48,6 +48,16 @@ Run tests:
 rake
 ```
 
+You can run the demo application:
+
+``` sh
+bundle exec rackup
+```
+
+The application will trigger the response code depending on the path you visit, so visiting
+[http://localhost:9292/418](http://localhost:9292/418) will respond with a teapot.
+
+
 ## Known issues
 
 Status code 100 (Continue) cannot have a response body. Triggering it will cause Rack to throw up.
